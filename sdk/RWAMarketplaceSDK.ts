@@ -53,9 +53,9 @@ export class RWAMarketplaceSDK {
     return this.contract.cancelOffer(id, idx);
   }
 
-  /** Seller ejects a non-accepted offer */
-  async ejectOffer(id: number, idx: number) {
-    return this.contract.ejectOffer(id, idx);
+  /** Seller rejects a non-accepted offer */
+  async rejectOffer(id: number, idx: number) {
+    return this.contract.rejectOffer(id, idx);
   }
 
   /** Seller accepts an offer */
