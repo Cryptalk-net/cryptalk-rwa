@@ -1,0 +1,19 @@
+{
+  "name": "cryptalk-rwa-sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "deploy:token": "hardhat run scripts/deployToken.ts --network rinkeby",
+    "deploy:market": "hardhat run scripts/deployMarketplace.ts --network rinkeby"
+  },
+  "dependencies": {
+    "ethers": "^6.0.0",
+    "@reown/appkit": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
